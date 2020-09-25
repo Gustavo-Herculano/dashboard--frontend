@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html, body {
+    height: 100%;
+    background-color: #faf9fc;
+}
+
+.clear {
+    clear: both;
+}
+
+.sidebar {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 100%;
+    background-color: #2d3035;
+}
+
+.topo {
+    background-color: #26282d;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.topo h3 {
+    color: white;
+}
+
+nav.menu {
+    padding: 60px 30px 30px 30px;
+}
+
+nav.menu ul li {
+    list-style: none;
+    margin-left: 20px;
+    padding: 20px 0;
+}
+
+nav.menu ul li a {
+    color: #717171;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0 25px;
+    font-weight: normal;
+}
+
+nav.menu ul li i {
+    color: #717171;
+    font-size: 17px;
+}
+
+nav.menu ul li:hover i {
+    transition: 0.7s;
+    color: #6e18ab;
+}
+
+nav.menu ul li:hover a {
+    transition: 0.7s;
+    color: white;
+}
+
+.desconectar {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: #26282d;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+.desconectar i {
+    color: #717171;
+    font-size: 13px;
+}
+
+.desconectar:hover i {
+    transition: 0.7s;
+    color: #6e18ab;
+}
+
+.desconectar a {
+    color: #717171;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 0 10px;
+    font-weight: normal;
+}
+
+.desconectar:hover a {
+    transition: 0.7s;
+    color: white;
+}
+
+/************ Main-Content **************/
+
+/***** Header ****/
+
+section.main-content {
+    width: calc(100% - 300px);
+    height: 100%;
+    float: left;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    height: 50px;
+}
+
+header .pesquisa-campo {
+    float: right;
+}
+
+.icone-pesquisa {
+    color: #26282d;
+    padding: 5px;
+    display: inline-block;
+}
+
+.pesquisa-campo form {
+    display: inline-block;
+}
+
+.pesquisa-campo input[type=text] {
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+.pesquisa-campo input[type=text]:focus {
+    outline: none;
+}
+
+header .email-campo {
+    float: left;
+}
+
+.icone-email {
+    color: white;
+    font-size: 21px;
+    background-color: #2d3035;
+    padding: 2px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icone-notificacao:hover {
+    color: #6e18ab;
+    transition: 0.5s;
+}
+
+.icone-email:hover {
+    color: #6e18ab;
+    transition: 0.5s;
+}
+
+.icone-notificacao {
+    color: white;
+    background-color: #2d3035;
+    font-size: 21px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+header span {
+    float: left;
+    margin-top: 7px;
+    font-size: 15px;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+/******* Content-1 *********/
+
+section.content-1 {
+    float: left;
+    width: 75%;
+    height: calc(100% - 50px);
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.painel {
+    padding: 20px;
+    width: 100%;
+    float: left;
+    border: 2px solid #ebebeb;
+    background-color: white;
+    
+    margin-bottom: 30px;
+}
+
+.painel h2 {
+    font-size: 20px;
+    color: #7f7f7f;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.painel p {
+    color: #b2b2b2;
+
+}
+
+.painel-2 {
+    padding: 20px;
+    width: 100%;
+    float: left;
+    border: 2px solid #ebebeb;
+    background-color: white;
+}
+
+.painel-2 h2 {
+    font-size: 20px;
+    color: #7f7f7f;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/******* Ultimas autalizacoes *******/
+
+div.ultimas-atualizacoes {
+    width: 25%;
+    background-color: #eaebeb;
+    float: left;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+.atualizacoes-topo {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.atualizacoes-topo h2 {
+   font-size: 16px;
+   font-weight: normal;
+   color: #7f7f7f;
+}
+
+.etapas__group2{
+	margin-bottom: 10px;
+}
+
+.etapas__group2 .circle{
+	width: 15px;
+	height: 15px;
+	float: left;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+.line{
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	z-index: 99999;
+	transform:translate(-50%,0);
+	height: 97px;
+	width: 1px;
+	background: #7f7f7f;
+}
+
+.etapas__descricao{
+	float: left;
+	width: 100%;
+    padding:0 20px;
+}
+
+.etapas__descricao h3{
+	color: #bbbbbb;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.etapas__descricao p{
+    margin-left: 30px;
+	color: #b2b2b2;
+	font-weight: normal;
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
